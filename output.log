@@ -1,0 +1,404 @@
+ConversationModel.logger 2024-06-06 19:13:32,960 - INFO - Running from_llm: --- 0.0001735687255859375 seconds ---
+ConversationModel.logger 2024-06-06 19:13:32,960 - INFO - Running from_llm: --- 0.0002875328063964844 seconds ---
+ConversationModel.logger 2024-06-06 19:13:32,961 - INFO - Running from_llm: --- 0.00142669677734375 seconds ---
+ConversationModel.logger 2024-06-06 19:13:32,961 - INFO - Running seed_agent: --- 4.38690185546875e-05 seconds ---
+twilio.http_client 2024-06-06 19:13:34,177 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 19:13:34,177 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 19:13:34,177 - INFO - Headers:
+twilio.http_client 2024-06-06 19:13:34,177 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 19:13:34,177 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 19:13:34,177 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 19:13:34,178 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 19:13:34,178 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 19:13:34,178 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 19:13:35,809 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 19:13:35,809 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 14:13:35 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQf796d8d71ef96ce98d53efa0968a1af8', 'Twilio-Request-Duration': '0.057', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 19:13:40,582 - INFO - Running _prep_messages: --- 0.0015459060668945312 seconds ---
+httpx 2024-06-06 19:13:41,192 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+langchain_core.language_models.llms 2024-06-06 19:13:41,216 - WARNING - Retrying ConversationModel.agents.ConversationalModel.acompletion_with_retry.<locals>._completion_with_retry in 4.0 seconds as it raised APIError: OpenAIException - Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-DQnBq***************************************DXMQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}.
+httpx 2024-06-06 19:13:45,672 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+langchain_core.language_models.llms 2024-06-06 19:13:45,681 - WARNING - Retrying ConversationModel.agents.ConversationalModel.acompletion_with_retry.<locals>._completion_with_retry in 4.0 seconds as it raised APIError: OpenAIException - Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-DQnBq***************************************DXMQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}.
+httpx 2024-06-06 19:13:50,178 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+langchain_core.language_models.llms 2024-06-06 19:13:50,186 - WARNING - Retrying ConversationModel.agents.ConversationalModel.acompletion_with_retry.<locals>._completion_with_retry in 4.0 seconds as it raised APIError: OpenAIException - Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-DQnBq***************************************DXMQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}.
+httpx 2024-06-06 19:13:54,732 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+langchain_core.language_models.llms 2024-06-06 19:13:54,740 - WARNING - Retrying ConversationModel.agents.ConversationalModel.acompletion_with_retry.<locals>._completion_with_retry in 8.0 seconds as it raised APIError: OpenAIException - Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-DQnBq***************************************DXMQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}.
+httpx 2024-06-06 19:14:03,311 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+langchain_core.language_models.llms 2024-06-06 19:14:03,323 - WARNING - Retrying ConversationModel.agents.ConversationalModel.acompletion_with_retry.<locals>._completion_with_retry in 10.0 seconds as it raised APIError: OpenAIException - Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-DQnBq***************************************DXMQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}.
+httpx 2024-06-06 19:14:13,937 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+ConversationModel.logger 2024-06-06 19:18:39,598 - INFO - Running from_llm: --- 0.00014710426330566406 seconds ---
+ConversationModel.logger 2024-06-06 19:18:39,599 - INFO - Running from_llm: --- 0.00023889541625976562 seconds ---
+ConversationModel.logger 2024-06-06 19:18:39,599 - INFO - Running from_llm: --- 0.0011777877807617188 seconds ---
+ConversationModel.logger 2024-06-06 19:18:39,599 - INFO - Running seed_agent: --- 1.1920928955078125e-05 seconds ---
+twilio.http_client 2024-06-06 19:18:40,928 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 19:18:40,928 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 19:18:40,928 - INFO - Headers:
+twilio.http_client 2024-06-06 19:18:40,928 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 19:18:40,928 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 19:18:40,929 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 19:18:40,929 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 19:18:40,929 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 19:18:40,929 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 19:18:42,482 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 19:18:42,483 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 14:18:42 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQddcfed5a0b7f63e61959c2c8d0d75bcd', 'Twilio-Request-Duration': '0.066', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 19:18:47,277 - INFO - Running _prep_messages: --- 0.0010426044464111328 seconds ---
+httpx 2024-06-06 19:18:48,183 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 19:18:57,564 - INFO - Running _prep_messages: --- 0.001241922378540039 seconds ---
+httpx 2024-06-06 19:18:58,397 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+asyncio 2024-06-06 19:19:04,648 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-130' coro=<WebSocketCommonProtocol.send() done, defined at /home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py:580> exception=ConnectionClosedOK(Close(code=1000, reason=''), Close(code=<CloseCode.NORMAL_CLOSURE: 1000>, reason=''), False)>
+Traceback (most recent call last):
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 635, in send
+    await self.ensure_open()
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 939, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: sent 1000 (OK); then received 1000 (OK)
+ConversationModel.logger 2024-06-06 19:19:04,654 - INFO - Running _prep_messages: --- 0.0008683204650878906 seconds ---
+httpx 2024-06-06 19:19:05,401 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 19:47:29,234 - INFO - Running from_llm: --- 0.00020623207092285156 seconds ---
+ConversationModel.logger 2024-06-06 19:47:29,234 - INFO - Running from_llm: --- 0.0002624988555908203 seconds ---
+ConversationModel.logger 2024-06-06 19:47:29,235 - INFO - Running from_llm: --- 0.0013854503631591797 seconds ---
+ConversationModel.logger 2024-06-06 19:47:29,235 - INFO - Running seed_agent: --- 1.3113021850585938e-05 seconds ---
+twilio.http_client 2024-06-06 19:47:30,661 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 19:47:30,661 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 19:47:30,662 - INFO - Headers:
+twilio.http_client 2024-06-06 19:47:30,662 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 19:47:30,662 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 19:47:30,662 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 19:47:30,662 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 19:47:30,662 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 19:47:30,662 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 19:47:32,384 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 19:47:32,384 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 14:47:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQa0d926b17b1f76a71072c751f1f3bfc9', 'Twilio-Request-Duration': '0.059', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 19:47:37,648 - INFO - Running _prep_messages: --- 0.0010056495666503906 seconds ---
+httpx 2024-06-06 19:47:38,913 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 19:47:52,804 - INFO - Running _prep_messages: --- 0.0009379386901855469 seconds ---
+httpx 2024-06-06 19:47:53,458 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 19:48:08,351 - INFO - Running _prep_messages: --- 0.000990152359008789 seconds ---
+httpx 2024-06-06 19:48:09,033 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+asyncio 2024-06-06 19:48:22,998 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-256' coro=<WebSocketCommonProtocol.send() done, defined at /home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py:580> exception=ConnectionClosedOK(Close(code=1000, reason=''), Close(code=<CloseCode.NORMAL_CLOSURE: 1000>, reason=''), False)>
+Traceback (most recent call last):
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 635, in send
+    await self.ensure_open()
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 939, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: sent 1000 (OK); then received 1000 (OK)
+ConversationModel.logger 2024-06-06 19:48:23,003 - INFO - Running _prep_messages: --- 0.0009608268737792969 seconds ---
+httpx 2024-06-06 19:48:24,053 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 19:49:39,442 - INFO - Running from_llm: --- 0.00012636184692382812 seconds ---
+ConversationModel.logger 2024-06-06 19:49:39,442 - INFO - Running from_llm: --- 0.00031948089599609375 seconds ---
+ConversationModel.logger 2024-06-06 19:49:39,443 - INFO - Running from_llm: --- 0.0014333724975585938 seconds ---
+ConversationModel.logger 2024-06-06 19:49:39,443 - INFO - Running seed_agent: --- 1.71661376953125e-05 seconds ---
+twilio.http_client 2024-06-06 19:49:40,499 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 19:49:40,500 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 19:49:40,500 - INFO - Headers:
+twilio.http_client 2024-06-06 19:49:40,500 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 19:49:40,500 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 19:49:40,500 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 19:49:40,500 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 19:49:40,500 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 19:49:40,500 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 19:49:42,119 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 19:49:42,120 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 14:49:41 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ7aa10e0aafede9d52dd6529aa9ab33d2', 'Twilio-Request-Duration': '0.044', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 19:49:47,800 - INFO - Running _prep_messages: --- 0.0010914802551269531 seconds ---
+httpx 2024-06-06 19:49:48,611 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 19:50:04,562 - INFO - Running _prep_messages: --- 0.0009710788726806641 seconds ---
+httpx 2024-06-06 19:50:05,347 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 19:50:18,505 - INFO - Running _prep_messages: --- 0.0008645057678222656 seconds ---
+httpx 2024-06-06 19:50:19,182 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 19:50:35,543 - INFO - Running _prep_messages: --- 0.0008635520935058594 seconds ---
+httpx 2024-06-06 19:50:36,296 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 19:50:51,181 - INFO - Running _prep_messages: --- 0.0008733272552490234 seconds ---
+httpx 2024-06-06 19:50:51,952 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 19:51:05,607 - INFO - Running _prep_messages: --- 0.0008649826049804688 seconds ---
+httpx 2024-06-06 19:51:06,353 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 19:51:18,128 - INFO - Running _prep_messages: --- 0.0003170967102050781 seconds ---
+httpx 2024-06-06 19:51:18,797 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+asyncio 2024-06-06 19:51:28,756 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-506' coro=<WebSocketCommonProtocol.send() done, defined at /home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py:580> exception=ConnectionClosedOK(Close(code=1000, reason=''), Close(code=<CloseCode.NORMAL_CLOSURE: 1000>, reason=''), False)>
+Traceback (most recent call last):
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 635, in send
+    await self.ensure_open()
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 939, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: sent 1000 (OK); then received 1000 (OK)
+ConversationModel.logger 2024-06-06 19:51:28,762 - INFO - Running _prep_messages: --- 0.0009496212005615234 seconds ---
+httpx 2024-06-06 19:51:29,615 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:12:37,766 - INFO - Running from_llm: --- 0.0001246929168701172 seconds ---
+ConversationModel.logger 2024-06-06 20:12:37,767 - INFO - Running from_llm: --- 0.0002143383026123047 seconds ---
+ConversationModel.logger 2024-06-06 20:12:37,767 - INFO - Running from_llm: --- 0.0017554759979248047 seconds ---
+ConversationModel.logger 2024-06-06 20:12:37,767 - INFO - Running seed_agent: --- 1.1205673217773438e-05 seconds ---
+twilio.http_client 2024-06-06 20:12:39,239 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 20:12:39,239 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 20:12:39,240 - INFO - Headers:
+twilio.http_client 2024-06-06 20:12:39,240 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 20:12:39,240 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 20:12:39,240 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 20:12:39,240 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 20:12:39,240 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 20:12:39,240 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 20:12:41,047 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 20:12:41,047 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 15:12:40 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ10bde0965b5d3627dce3866006001a06', 'Twilio-Request-Duration': '0.075', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 20:17:47,886 - INFO - Running from_llm: --- 0.00012612342834472656 seconds ---
+ConversationModel.logger 2024-06-06 20:17:47,886 - INFO - Running from_llm: --- 0.0003180503845214844 seconds ---
+ConversationModel.logger 2024-06-06 20:17:47,887 - INFO - Running from_llm: --- 0.001234292984008789 seconds ---
+ConversationModel.logger 2024-06-06 20:17:47,887 - INFO - Running seed_agent: --- 1.0967254638671875e-05 seconds ---
+twilio.http_client 2024-06-06 20:17:49,162 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 20:17:49,162 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 20:17:49,163 - INFO - Headers:
+twilio.http_client 2024-06-06 20:17:49,163 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 20:17:49,163 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 20:17:49,163 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 20:17:49,163 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 20:17:49,163 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 20:17:49,163 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 20:17:50,902 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 20:17:50,902 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 15:17:50 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ1a05467d4750ee1f1774e463960b5b95', 'Twilio-Request-Duration': '0.070', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 20:28:14,526 - INFO - Running from_llm: --- 0.00012993812561035156 seconds ---
+ConversationModel.logger 2024-06-06 20:28:14,527 - INFO - Running from_llm: --- 0.00024056434631347656 seconds ---
+ConversationModel.logger 2024-06-06 20:28:14,527 - INFO - Running from_llm: --- 0.0010750293731689453 seconds ---
+ConversationModel.logger 2024-06-06 20:28:14,527 - INFO - Running seed_agent: --- 1.5020370483398438e-05 seconds ---
+twilio.http_client 2024-06-06 20:28:15,927 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 20:28:15,927 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 20:28:15,927 - INFO - Headers:
+twilio.http_client 2024-06-06 20:28:15,927 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 20:28:15,928 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 20:28:15,928 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 20:28:15,928 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 20:28:15,928 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 20:28:15,928 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 20:28:17,705 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 20:28:17,706 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 15:28:17 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQabffd8fb8ba279c7e39c7fbbf4f29637', 'Twilio-Request-Duration': '0.067', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 20:28:22,482 - INFO - Running _prep_messages: --- 0.0010080337524414062 seconds ---
+httpx 2024-06-06 20:28:25,116 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:28:45,213 - INFO - Running _prep_messages: --- 0.0009098052978515625 seconds ---
+httpx 2024-06-06 20:28:46,097 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:28:56,466 - INFO - Running _prep_messages: --- 0.0008046627044677734 seconds ---
+httpx 2024-06-06 20:28:57,399 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:29:22,389 - INFO - Running _prep_messages: --- 0.0008215904235839844 seconds ---
+httpx 2024-06-06 20:29:23,232 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:30:01,617 - INFO - Running _prep_messages: --- 0.0008597373962402344 seconds ---
+httpx 2024-06-06 20:30:02,417 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:30:32,325 - INFO - Running _prep_messages: --- 0.00095367431640625 seconds ---
+httpx 2024-06-06 20:30:33,393 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:31:00,663 - INFO - Running _prep_messages: --- 0.0008051395416259766 seconds ---
+httpx 2024-06-06 20:31:01,577 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:31:24,725 - INFO - Running _prep_messages: --- 0.0008542537689208984 seconds ---
+httpx 2024-06-06 20:31:25,749 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:32:19,277 - INFO - Running from_llm: --- 0.00017976760864257812 seconds ---
+ConversationModel.logger 2024-06-06 20:32:19,278 - INFO - Running from_llm: --- 0.00024962425231933594 seconds ---
+ConversationModel.logger 2024-06-06 20:32:19,278 - INFO - Running from_llm: --- 0.0014009475708007812 seconds ---
+ConversationModel.logger 2024-06-06 20:32:19,278 - INFO - Running seed_agent: --- 1.1682510375976562e-05 seconds ---
+twilio.http_client 2024-06-06 20:32:20,331 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 20:32:20,331 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 20:32:20,331 - INFO - Headers:
+twilio.http_client 2024-06-06 20:32:20,331 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 20:32:20,331 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 20:32:20,331 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 20:32:20,331 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 20:32:20,331 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 20:32:20,331 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 20:32:22,179 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 20:32:22,180 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 15:32:22 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQeabc30b4ca2af881111ca99578d32002', 'Twilio-Request-Duration': '0.055', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 20:32:27,013 - INFO - Running _prep_messages: --- 0.0009160041809082031 seconds ---
+httpx 2024-06-06 20:32:28,045 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:32:42,264 - INFO - Running _prep_messages: --- 0.0009381771087646484 seconds ---
+httpx 2024-06-06 20:32:43,057 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:32:51,444 - INFO - Running _prep_messages: --- 0.0014507770538330078 seconds ---
+httpx 2024-06-06 20:32:52,496 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:33:06,895 - INFO - Running _prep_messages: --- 0.0008087158203125 seconds ---
+httpx 2024-06-06 20:33:08,047 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:33:30,641 - INFO - Running _prep_messages: --- 0.0009317398071289062 seconds ---
+httpx 2024-06-06 20:33:31,486 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:33:55,453 - INFO - Running _prep_messages: --- 0.0008158683776855469 seconds ---
+httpx 2024-06-06 20:33:56,555 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:34:12,048 - INFO - Running _prep_messages: --- 0.00026535987854003906 seconds ---
+httpx 2024-06-06 20:34:12,772 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:34:40,437 - INFO - Running _prep_messages: --- 0.0012998580932617188 seconds ---
+httpx 2024-06-06 20:34:41,233 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+asyncio 2024-06-06 20:34:54,477 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-829' coro=<WebSocketCommonProtocol.send() done, defined at /home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py:580> exception=ConnectionClosedOK(Close(code=1000, reason=''), Close(code=<CloseCode.NORMAL_CLOSURE: 1000>, reason=''), False)>
+Traceback (most recent call last):
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 635, in send
+    await self.ensure_open()
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 939, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: sent 1000 (OK); then received 1000 (OK)
+ConversationModel.logger 2024-06-06 20:34:54,484 - INFO - Running _prep_messages: --- 0.0008909702301025391 seconds ---
+httpx 2024-06-06 20:34:55,447 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:41:12,606 - INFO - Running from_llm: --- 0.00020170211791992188 seconds ---
+ConversationModel.logger 2024-06-06 20:41:12,607 - INFO - Running from_llm: --- 0.0002460479736328125 seconds ---
+ConversationModel.logger 2024-06-06 20:41:12,608 - INFO - Running from_llm: --- 0.0018308162689208984 seconds ---
+ConversationModel.logger 2024-06-06 20:41:12,608 - INFO - Running seed_agent: --- 1.33514404296875e-05 seconds ---
+twilio.http_client 2024-06-06 20:41:13,918 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 20:41:13,919 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 20:41:13,919 - INFO - Headers:
+twilio.http_client 2024-06-06 20:41:13,919 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 20:41:13,919 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 20:41:13,919 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 20:41:13,919 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 20:41:13,920 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 20:41:13,920 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 20:41:15,911 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 20:41:15,912 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 15:41:15 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQb3c0f3d3ad90ce260889101eff343e7d', 'Twilio-Request-Duration': '0.066', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 20:41:33,546 - INFO - Running _prep_messages: --- 0.001008749008178711 seconds ---
+httpx 2024-06-06 20:41:34,588 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:41:52,966 - INFO - Running _prep_messages: --- 0.0003452301025390625 seconds ---
+httpx 2024-06-06 20:41:53,792 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:43:37,358 - INFO - Running from_llm: --- 0.00012540817260742188 seconds ---
+ConversationModel.logger 2024-06-06 20:43:37,358 - INFO - Running from_llm: --- 0.00018358230590820312 seconds ---
+ConversationModel.logger 2024-06-06 20:43:37,359 - INFO - Running from_llm: --- 0.0012214183807373047 seconds ---
+ConversationModel.logger 2024-06-06 20:43:37,359 - INFO - Running seed_agent: --- 1.4066696166992188e-05 seconds ---
+twilio.http_client 2024-06-06 20:43:38,372 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 20:43:38,372 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 20:43:38,372 - INFO - Headers:
+twilio.http_client 2024-06-06 20:43:38,372 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 20:43:38,372 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 20:43:38,372 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 20:43:38,372 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 20:43:38,372 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 20:43:38,373 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 20:43:40,201 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 20:43:40,201 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 15:43:40 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQa2538b83cc6138206f0bccb46874ad64', 'Twilio-Request-Duration': '0.082', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 20:43:56,599 - INFO - Running _prep_messages: --- 0.0009992122650146484 seconds ---
+httpx 2024-06-06 20:43:58,433 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:44:23,145 - INFO - Running _prep_messages: --- 0.0024378299713134766 seconds ---
+httpx 2024-06-06 20:44:24,341 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:44:59,630 - INFO - Running _prep_messages: --- 0.0008437633514404297 seconds ---
+httpx 2024-06-06 20:45:00,534 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:49:06,124 - INFO - Running from_llm: --- 0.00012922286987304688 seconds ---
+ConversationModel.logger 2024-06-06 20:49:06,125 - INFO - Running from_llm: --- 0.00016021728515625 seconds ---
+ConversationModel.logger 2024-06-06 20:49:06,125 - INFO - Running from_llm: --- 0.0009503364562988281 seconds ---
+ConversationModel.logger 2024-06-06 20:49:06,125 - INFO - Running seed_agent: --- 2.8848648071289062e-05 seconds ---
+twilio.http_client 2024-06-06 20:49:07,305 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 20:49:07,306 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 20:49:07,306 - INFO - Headers:
+twilio.http_client 2024-06-06 20:49:07,306 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 20:49:07,306 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 20:49:07,306 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 20:49:07,306 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 20:49:07,306 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 20:49:07,306 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 20:49:08,848 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 20:49:08,849 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 15:49:08 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ8298b567c1371e5c7ae03c525b5d0d6c', 'Twilio-Request-Duration': '0.062', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 20:49:34,580 - INFO - Running _prep_messages: --- 0.0010695457458496094 seconds ---
+httpx 2024-06-06 20:49:35,383 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:49:45,937 - INFO - Running _prep_messages: --- 0.0008566379547119141 seconds ---
+httpx 2024-06-06 20:49:46,845 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:50:08,689 - INFO - Running _prep_messages: --- 0.0008115768432617188 seconds ---
+httpx 2024-06-06 20:50:09,531 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:50:28,798 - INFO - Running _prep_messages: --- 0.0008087158203125 seconds ---
+httpx 2024-06-06 20:50:29,488 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:51:01,226 - INFO - Running _prep_messages: --- 0.0008490085601806641 seconds ---
+httpx 2024-06-06 20:51:02,079 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:51:34,004 - INFO - Running _prep_messages: --- 0.0005824565887451172 seconds ---
+httpx 2024-06-06 20:51:34,776 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:51:49,221 - INFO - Running _prep_messages: --- 0.0008463859558105469 seconds ---
+httpx 2024-06-06 20:51:50,067 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:52:18,820 - INFO - Running _prep_messages: --- 0.0013511180877685547 seconds ---
+httpx 2024-06-06 20:52:19,604 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:52:43,389 - INFO - Running _prep_messages: --- 0.0010132789611816406 seconds ---
+httpx 2024-06-06 20:52:44,338 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:53:05,931 - INFO - Running _prep_messages: --- 0.0013127326965332031 seconds ---
+httpx 2024-06-06 20:53:06,831 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:53:26,978 - INFO - Running _prep_messages: --- 0.0008280277252197266 seconds ---
+httpx 2024-06-06 20:53:27,904 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:53:51,835 - INFO - Running _prep_messages: --- 0.0008726119995117188 seconds ---
+httpx 2024-06-06 20:53:52,659 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 20:54:13,426 - INFO - Running _prep_messages: --- 0.0010499954223632812 seconds ---
+httpx 2024-06-06 20:54:14,187 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 22:47:10,198 - INFO - Running from_llm: --- 0.0003440380096435547 seconds ---
+ConversationModel.logger 2024-06-06 22:47:10,200 - INFO - Running from_llm: --- 0.000396728515625 seconds ---
+ConversationModel.logger 2024-06-06 22:47:10,200 - INFO - Running from_llm: --- 0.002374887466430664 seconds ---
+ConversationModel.logger 2024-06-06 22:47:10,200 - INFO - Running seed_agent: --- 1.33514404296875e-05 seconds ---
+twilio.http_client 2024-06-06 22:47:24,899 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 22:47:24,899 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 22:47:24,899 - INFO - Headers:
+twilio.http_client 2024-06-06 22:47:24,899 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 22:47:24,899 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 22:47:24,899 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 22:47:24,899 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 22:47:24,900 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 22:47:24,900 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 22:47:27,390 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 22:47:27,390 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 17:47:27 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ7ef9409a3079c9c0a34ede65e94d3dff', 'Twilio-Request-Duration': '0.065', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 22:47:46,850 - INFO - Running _prep_messages: --- 0.0010852813720703125 seconds ---
+httpx 2024-06-06 22:47:48,537 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+asyncio 2024-06-06 22:48:07,710 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-102' coro=<WebSocketCommonProtocol.send() done, defined at /home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py:580> exception=ConnectionClosedOK(Close(code=1000, reason=''), Close(code=<CloseCode.NORMAL_CLOSURE: 1000>, reason=''), False)>
+Traceback (most recent call last):
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 635, in send
+    await self.ensure_open()
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 939, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: sent 1000 (OK); then received 1000 (OK)
+ConversationModel.logger 2024-06-06 22:48:07,716 - INFO - Running _prep_messages: --- 0.0009014606475830078 seconds ---
+httpx 2024-06-06 22:48:08,628 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:45:43,809 - INFO - Running from_llm: --- 0.0008208751678466797 seconds ---
+ConversationModel.logger 2024-06-06 23:45:43,811 - INFO - Running from_llm: --- 0.0007476806640625 seconds ---
+ConversationModel.logger 2024-06-06 23:45:43,813 - INFO - Running from_llm: --- 0.004858255386352539 seconds ---
+ConversationModel.logger 2024-06-06 23:45:43,813 - INFO - Running seed_agent: --- 2.574920654296875e-05 seconds ---
+twilio.http_client 2024-06-06 23:45:46,566 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 23:45:46,566 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 23:45:46,567 - INFO - Headers:
+twilio.http_client 2024-06-06 23:45:46,567 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 23:45:46,567 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 23:45:46,568 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 23:45:46,568 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 23:45:46,568 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 23:45:46,569 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 23:45:49,401 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 23:45:49,403 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 18:45:49 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQca02d8bf8befa71d5faf7e6a6281bad0', 'Twilio-Request-Duration': '0.138', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 23:47:52,218 - INFO - Running from_llm: --- 0.0003993511199951172 seconds ---
+ConversationModel.logger 2024-06-06 23:47:52,219 - INFO - Running from_llm: --- 0.0007183551788330078 seconds ---
+ConversationModel.logger 2024-06-06 23:47:52,220 - INFO - Running from_llm: --- 0.003007650375366211 seconds ---
+ConversationModel.logger 2024-06-06 23:47:52,221 - INFO - Running seed_agent: --- 3.2901763916015625e-05 seconds ---
+twilio.http_client 2024-06-06 23:47:53,466 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-06-06 23:47:53,466 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC4a092d7a6e1c689241b05d6bd45f72ad/Calls.json
+twilio.http_client 2024-06-06 23:47:53,467 - INFO - Headers:
+twilio.http_client 2024-06-06 23:47:53,467 - INFO - User-Agent : twilio-python/8.11.0 (Linux x86_64) Python/3.10.12
+twilio.http_client 2024-06-06 23:47:53,467 - INFO - X-Twilio-Client : python-8.11.0
+twilio.http_client 2024-06-06 23:47:53,468 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-06-06 23:47:53,468 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-06-06 23:47:53,469 - INFO - Accept : application/json
+twilio.http_client 2024-06-06 23:47:53,469 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-06-06 23:48:04,823 - INFO - Response Status Code: 201
+twilio.http_client 2024-06-06 23:48:04,823 - INFO - Response Headers: {'Date': 'Thu, 06 Jun 2024 18:48:04 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQdeccd6a3023cef1061aa2b7a1cc07302', 'Twilio-Request-Duration': '0.042', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+ConversationModel.logger 2024-06-06 23:48:22,569 - INFO - Running _prep_messages: --- 0.0010118484497070312 seconds ---
+httpx 2024-06-06 23:48:28,664 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:48:40,417 - INFO - Running _prep_messages: --- 0.0008196830749511719 seconds ---
+httpx 2024-06-06 23:48:42,339 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:49:02,603 - INFO - Running _prep_messages: --- 0.0008814334869384766 seconds ---
+httpx 2024-06-06 23:49:03,951 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:49:38,014 - INFO - Running _prep_messages: --- 0.0008106231689453125 seconds ---
+httpx 2024-06-06 23:49:39,119 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:50:10,681 - INFO - Running _prep_messages: --- 0.0008308887481689453 seconds ---
+httpx 2024-06-06 23:50:11,682 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:50:40,203 - INFO - Running _prep_messages: --- 0.0008170604705810547 seconds ---
+httpx 2024-06-06 23:50:42,189 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:51:07,953 - INFO - Running _prep_messages: --- 0.0008740425109863281 seconds ---
+httpx 2024-06-06 23:51:08,910 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:51:40,800 - INFO - Running _prep_messages: --- 0.0008268356323242188 seconds ---
+httpx 2024-06-06 23:51:41,835 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:52:23,187 - INFO - Running _prep_messages: --- 0.0008237361907958984 seconds ---
+httpx 2024-06-06 23:52:24,311 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:52:53,085 - INFO - Running _prep_messages: --- 0.0008940696716308594 seconds ---
+httpx 2024-06-06 23:52:54,073 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:53:15,841 - INFO - Running _prep_messages: --- 0.001355886459350586 seconds ---
+httpx 2024-06-06 23:53:17,191 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:53:44,487 - INFO - Running _prep_messages: --- 0.0013065338134765625 seconds ---
+httpx 2024-06-06 23:53:45,570 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:54:20,177 - INFO - Running _prep_messages: --- 0.0010404586791992188 seconds ---
+httpx 2024-06-06 23:54:21,431 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ConversationModel.logger 2024-06-06 23:54:53,312 - INFO - Running _prep_messages: --- 0.0009138584136962891 seconds ---
+httpx 2024-06-06 23:54:54,331 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+asyncio 2024-06-06 23:55:11,835 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2235' coro=<WebSocketCommonProtocol.send() done, defined at /home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py:580> exception=ConnectionClosedOK(Close(code=1000, reason=''), Close(code=<CloseCode.NORMAL_CLOSURE: 1000>, reason=''), False)>
+Traceback (most recent call last):
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 635, in send
+    await self.ensure_open()
+  File "/home/adil/Envs/aicalling_env/lib/python3.10/site-packages/websockets/legacy/protocol.py", line 939, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: sent 1000 (OK); then received 1000 (OK)
+ConversationModel.logger 2024-06-06 23:55:11,841 - INFO - Running _prep_messages: --- 0.0008432865142822266 seconds ---
+httpx 2024-06-06 23:55:17,865 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
